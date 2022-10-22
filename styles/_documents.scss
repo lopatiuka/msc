@@ -1,0 +1,16 @@
+.documents {
+    background-color: var(--secondary-color);
+    padding-bottom: 300px;
+
+    .section-title {
+        text-align: center;
+    }
+
+    &-list {
+        list-style-type: none;
+
+        .main-text {
+            font-weight: 300;
+        }
+    }
+}

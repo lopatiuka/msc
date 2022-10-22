@@ -1,0 +1,23 @@
+.form-section {
+
+    form {
+        max-width: 700px;
+        padding: 25px 50px;
+        background-color: rgb(152, 29, 219);
+
+        .form-title {
+            color: var(--main-text-color);
+            font-size: 25px;
+            font-weight: 100;
+            text-align: center;
+        }
+
+        .form-control {
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            width: 100%;
+        }
+    }
+}
