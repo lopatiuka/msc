@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@100;300;400;500;700;800&display=swap");
 :root {
-  --primary-color: #001b47;
+  --primary-color: #000030;
   --secondary-color: #FFFFFF;
   --main-text-color: var(--secondary-color);
   --secondary-text-color: var(--primary-color);
@@ -29,7 +29,7 @@ header {
 header h1 {
   color: var(--main-text-color);
   font-size: 25px;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 @media screen and (min-width: 480px) {
@@ -51,8 +51,8 @@ header h1 {
   bottom: 15px;
   left: 15px;
   background-color: #7d48e0;
-  width: 75px;
-  height: 75px;
+  width: 55px;
+  height: 55px;
   border-radius: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -70,10 +70,14 @@ header h1 {
   cursor: pointer;
 }
 
+.call-btn img {
+  width: 70%;
+}
+
 @media screen and (min-width: 480px) {
   .call-btn {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
   }
 }
 
@@ -154,20 +158,29 @@ header h1 {
 .intro-text {
   color: var(--main-text-color);
   font-weight: 100;
-  font-size: 20px;
+  font-size: 19px;
   text-align: center;
 }
 
 .intro-text--bigger {
-  font-size: 25px;
+  font-size: 19px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 420px) {
+  .intro-text {
+    font-size: 22px;
+  }
+  .intro-text--bigger {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 525px) {
   .intro-text {
     font-size: 27px;
   }
   .intro-text--bigger {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 
@@ -346,8 +359,16 @@ header h1 {
   }
 }
 
-.advantages img {
-  width: 400px;
+.advantages .items .item {
+  border: 1px solid #ececec;
+  border-radius: 6px;
+  max-width: 600px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.advantages .items .item p {
+  font-weight: 300;
 }
 
 .services-list {
