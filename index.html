@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <title>Соnnect / PBC services</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -35,31 +35,31 @@
 
                 <div class="item">
                     <div class="text">
-                        <span class="item-number">1.</span>
-                        <p class="main-text">Вы заполняете анкету и получаете готовое решение именно для Вас.</p>
+                        <span class="item-number" data-aos="fade-right" data-aos-duration="1500">1.</span>
+                        <p class="main-text" data-aos="fade-down" data-aos-duration="1500">Вы заполняете анкету и получаете готовое решение именно для Вас.</p>
                     </div>
                     <img src="images/way-section/way-image-1.jpg" alt="">
                 </div>
 
                 <div class="item">
                     <div class="text">
-                        <span class="item-number">2.</span>
-                        <p class="main-text">Подписываете контракт, вносите частичную оплату.</p>
+                        <span class="item-number" data-aos="fade-right" data-aos-duration="1500">2.</span>
+                        <p class="main-text" data-aos="fade-down" data-aos-duration="1500">Подписываете контракт, вносите частичную оплату.</p>
                     </div>
                     <img src="images/way-section/way-image-2.jpg" alt="">
                 </div>
 
                 <div class="item">
                     <div class="text">
-                        <span class="item-number">3.</span>
-                        <p class="main-text">Владеете всей информацией благодаря оповещениям на Email.</p>
+                        <span class="item-number" data-aos="fade-right" data-aos-duration="1500">3.</span>
+                        <p class="main-text" data-aos="fade-down" data-aos-duration="1500">Владеете всей информацией благодаря оповещениям на Email.</p>
                     </div>
                     <img src="images/way-section/way-image-3.jpg" alt="">
                 </div>
                 <div class="item">
                     <div class="text">
-                        <span class="item-number">4.</span>
-                        <p class="main-text">Получаете все необходимые документы.</p>
+                        <span class="item-number" data-aos="fade-right" data-aos-duration="1500">4.</span>
+                        <p class="main-text" data-aos="fade-down" data-aos-duration="1500">Получаете все необходимые документы.</p>
                     </div>
                     <img src="images/way-section/way-image-4.jpg" alt="">
                 </div>
@@ -118,6 +118,14 @@
         <section class="advantages">
             <div class="container-xl">
                 <h2 class="section-title section-title--secondary">Наши преимущества.</h2>
+
+                <div class="items d-flex flex-column align-items-center">
+                    <img src="images/advantages-section/advantages-1.PNG" alt="" class="img-fluid mb-3">
+                    <img src="images/advantages-section/advantages-2.PNG" alt="" class="img-fluid mb-3">
+                    <img src="images/advantages-section/advantages-3.PNG" alt="" class="img-fluid mb-3">
+                    <img src="images/advantages-section/advantages-4.PNG" alt="" class="img-fluid mb-3">
+                    <img src="images/advantages-section/advantages-5.PNG" alt="" class="img-fluid mb-3">
+                </div>
             </div>
         </section>
 
@@ -147,6 +155,14 @@
         <section class="feedbacks">
             <div class="container-xl">
                 <h2 class="section-title">Отзывы</h2>
+
+                <div class="feedbacks-items mx-auto">
+                    <img src="images/feedbacks-section/feedback-1.jpg" alt="" class="img-fluid" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
+                    <img src="images/feedbacks-section/feedback-2.jpg" alt="" class="img-fluid" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
+                    <img src="images/feedbacks-section/feedback-3.jpg" alt="" class="img-fluid" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
+                    <img src="images/feedbacks-section/feedback-4.jpg" alt="" class="img-fluid" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
+                    <img src="images/feedbacks-section/feedback-5.jpg" alt="" class="img-fluid" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
+                </div>
             </div>
         </section>
 
@@ -175,6 +191,10 @@
                     scrollTop: $("#form").offset().top-100
                 }, 100); 
             });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 </html>

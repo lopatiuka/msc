@@ -1,0 +1,25 @@
+.feedbacks {
+    padding-bottom: 50px;
+    background-color: #9f97fa;
+
+    &-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 710px;
+
+        img {
+            width: 600px;
+
+            @media screen and (min-width: 768px) {
+                &:nth-child(2n) {
+                    align-self: flex-end;
+                }
+
+                &:nth-child(2n + 1) {
+                    align-self: flex-start;
+                }
+            }
+        }
+    }
+}

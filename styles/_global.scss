@@ -3,6 +3,10 @@ body {
     background-color: var(--primary-color);
 }
 
+ul {
+    padding-left: 0;
+}
+
 section {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -15,8 +19,12 @@ header {
 
     h1 {
         color: var(--main-text-color);
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 100;
+
+        @media screen and (min-width: 480px) {
+            font-size: 30px;
+        }
     }
 }
 
@@ -34,21 +42,27 @@ header {
     bottom: 15px;
     left: 15px;
     background-color: rgb(125, 72, 224);
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     border-radius: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10;
 
     &:hover {
         cursor: pointer;
+    }
+
+    @media screen and (min-width: 480px) {
+        width: 100px;
+        height: 100px;
     }
 }
 
 .section-title {
     color: var(--main-text-color);
-    font-size: 50px;
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
 
@@ -57,12 +71,28 @@ header {
     }
 
     &--bigger {
-        font-size: 60px;
+        font-size: 35px;
+    }
+
+    @media screen and (min-width: 480px) {
+        font-size: 35px;
+
+        &--bigger {
+            font-size: 45px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 50px;
+
+        &--bigger {
+            font-size: 60px;
+        }
     }
 }
 
 .main-text {
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 100;
     color: var(--main-text-color);
     margin-bottom: 0;
@@ -72,6 +102,23 @@ header {
     }
 
     &--bigger {
-        font-size: 35px;
+        font-size: 25px;
+    }
+
+    
+    @media screen and (min-width: 480px) {
+        font-size: 22px;
+
+        &--bigger {
+            font-size: 30px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 25px;
+
+        &--bigger {
+            font-size: 35px;
+        }
     }
 }

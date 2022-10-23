@@ -1,6 +1,6 @@
 .documents {
     background-color: var(--secondary-color);
-    padding-bottom: 300px;
+    padding-bottom: 30px;
 
     .section-title {
         text-align: center;
@@ -12,5 +12,17 @@
         .main-text {
             font-weight: 300;
         }
+    }
+
+    @media screen and (min-width: 480px) {
+        padding-bottom: 100px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 150px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 300px;
     }
 }

@@ -12,6 +12,10 @@ body {
   background-color: var(--primary-color);
 }
 
+ul {
+  padding-left: 0;
+}
+
 section {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -24,8 +28,14 @@ header {
 
 header h1 {
   color: var(--main-text-color);
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 100;
+}
+
+@media screen and (min-width: 480px) {
+  header h1 {
+    font-size: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -41,8 +51,8 @@ header h1 {
   bottom: 15px;
   left: 15px;
   background-color: #7d48e0;
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   border-radius: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,15 +63,23 @@ header h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 10;
 }
 
 .call-btn:hover {
   cursor: pointer;
 }
 
+@media screen and (min-width: 480px) {
+  .call-btn {
+    width: 100px;
+    height: 100px;
+  }
+}
+
 .section-title {
   color: var(--main-text-color);
-  font-size: 50px;
+  font-size: 25px;
   font-weight: bold;
   text-align: center;
 }
@@ -71,11 +89,29 @@ header h1 {
 }
 
 .section-title--bigger {
-  font-size: 60px;
+  font-size: 35px;
+}
+
+@media screen and (min-width: 480px) {
+  .section-title {
+    font-size: 35px;
+  }
+  .section-title--bigger {
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 50px;
+  }
+  .section-title--bigger {
+    font-size: 60px;
+  }
 }
 
 .main-text {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 100;
   color: var(--main-text-color);
   margin-bottom: 0;
@@ -86,7 +122,25 @@ header h1 {
 }
 
 .main-text--bigger {
-  font-size: 35px;
+  font-size: 25px;
+}
+
+@media screen and (min-width: 480px) {
+  .main-text {
+    font-size: 22px;
+  }
+  .main-text--bigger {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-text {
+    font-size: 25px;
+  }
+  .main-text--bigger {
+    font-size: 35px;
+  }
 }
 
 .intro {
@@ -100,12 +154,39 @@ header h1 {
 .intro-text {
   color: var(--main-text-color);
   font-weight: 100;
-  font-size: 35px;
+  font-size: 20px;
   text-align: center;
 }
 
 .intro-text--bigger {
-  font-size: 43px;
+  font-size: 25px;
+}
+
+@media screen and (min-width: 480px) {
+  .intro-text {
+    font-size: 27px;
+  }
+  .intro-text--bigger {
+    font-size: 35px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .intro-text {
+    font-size: 30px;
+  }
+  .intro-text--bigger {
+    font-size: 37px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .intro-text {
+    font-size: 35px;
+  }
+  .intro-text--bigger {
+    font-size: 43px;
+  }
 }
 
 .way .section-title {
@@ -123,7 +204,7 @@ header h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .way .item .text {
@@ -133,17 +214,31 @@ header h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 10px;
 }
 
 .way .item-number {
   font-size: 50px;
   font-weight: bold;
   color: var(--main-text-color);
-  margin-right: 40px;
+  margin-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .way .item-number {
+    margin-right: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .way .item-number {
+    margin-right: 40px;
+  }
 }
 
 .way .item img {
-  max-width: 400px;
+  width: 400px;
+  max-width: 100%;
   border-radius: 10px;
 }
 
@@ -198,7 +293,7 @@ header h1 {
 
 .documents {
   background-color: var(--secondary-color);
-  padding-bottom: 300px;
+  padding-bottom: 30px;
 }
 
 .documents .section-title {
@@ -213,8 +308,46 @@ header h1 {
   font-weight: 300;
 }
 
+@media screen and (min-width: 480px) {
+  .documents {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .documents {
+    padding-bottom: 150px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .documents {
+    padding-bottom: 300px;
+  }
+}
+
 .advantages {
   background-color: var(--secondary-color);
+}
+
+.advantages .section-title {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .advantages .section-title {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages .section-title {
+    margin-bottom: 50px;
+  }
+}
+
+.advantages img {
+  width: 400px;
 }
 
 .services-list {
@@ -229,6 +362,7 @@ header h1 {
   max-width: 700px;
   padding: 25px 50px;
   background-color: #981ddb;
+  border-radius: 10px;
 }
 
 .form-section form .form-title {
@@ -244,5 +378,43 @@ header h1 {
 
 .form-section form .btn {
   width: 100%;
+}
+
+.clients .section-title {
+  max-width: 715px;
+}
+
+.feedbacks {
+  padding-bottom: 50px;
+  background-color: #9f97fa;
+}
+
+.feedbacks-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 710px;
+}
+
+.feedbacks-items img {
+  width: 600px;
+}
+
+@media screen and (min-width: 768px) {
+  .feedbacks-items img:nth-child(2n) {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .feedbacks-items img:nth-child(2n + 1) {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
 }
 /*# sourceMappingURL=index.css.map */
