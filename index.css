@@ -29,7 +29,6 @@ header {
 header h1 {
   color: var(--main-text-color);
   font-size: 25px;
-  font-weight: 300;
 }
 
 @media screen and (min-width: 480px) {
@@ -72,6 +71,8 @@ header h1 {
 
 .call-btn img {
   width: 70%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 @media screen and (min-width: 480px) {
@@ -379,6 +380,13 @@ header h1 {
   max-width: 715px;
 }
 
+.clients .section-title .count {
+  background: -webkit-gradient(linear, left top, right top, from(#d6ddec), color-stop(50%, #bdd4ef), to(#98e0f4));
+  background: linear-gradient(to right, #d6ddec 0%, #bdd4ef 50%, #98e0f4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .form-section form {
   max-width: 700px;
   padding: 25px 50px;
@@ -403,6 +411,13 @@ header h1 {
 
 .clients .section-title {
   max-width: 715px;
+}
+
+.clients .section-title .count {
+  background: -webkit-gradient(linear, left top, right top, from(#d6ddec), color-stop(50%, #bdd4ef), to(#98e0f4));
+  background: linear-gradient(to right, #d6ddec 0%, #bdd4ef 50%, #98e0f4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .feedbacks {

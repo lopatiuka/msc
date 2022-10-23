@@ -2,5 +2,11 @@
 
     .section-title {
         max-width: 715px;
+
+        .count {
+            background: linear-gradient(to right, #d6ddec 0%, #bdd4ef 50%, #98e0f4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     }
 }

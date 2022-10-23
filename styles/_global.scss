@@ -20,7 +20,6 @@ header {
     h1 {
         color: var(--main-text-color);
         font-size: 25px;
-        font-weight: 300;
 
         @media screen and (min-width: 480px) {
             font-size: 30px;
@@ -56,6 +55,7 @@ header {
 
     img {
         width: 70%;
+        transform: rotate(45deg);
     }
 
     @media screen and (min-width: 480px) {
