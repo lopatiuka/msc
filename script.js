@@ -29,7 +29,7 @@ $(".counter").inViewport(function(px) { // Make use of the `px` argument!!!
     $(this).prop('Counter',0).animate({
         Counter: $(this).text()
     }, {
-        duration: 1000,
+        duration: 1500,
         step: function (now) {
         $(this).text(Math.ceil(now));
         }
