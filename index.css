@@ -17,8 +17,8 @@ ul {
 }
 
 section {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 header {
@@ -28,6 +28,7 @@ header {
 
 header h1 {
   color: var(--main-text-color);
+  font-weight: 700;
   font-size: 25px;
 }
 
@@ -84,24 +85,24 @@ header h1 {
 
 @-webkit-keyframes tremor {
   1% {
-    left: 1px;
-    -webkit-transform: translateX(8%);
-    transform: translateX(8%);
+    left: 5px;
+    -webkit-transform: translateX(10%);
+    transform: translateX(10%);
   }
   2% {
-    left: -1px;
-    -webkit-transform: translateX(-8%);
-    transform: translateX(-8%);
+    left: -5px;
+    -webkit-transform: translateX(-10%);
+    transform: translateX(-10%);
   }
   3% {
-    left: 1px;
-    -webkit-transform: translateX(8%);
-    transform: translateX(8%);
+    left: 5px;
+    -webkit-transform: translateX(10%);
+    transform: translateX(10%);
   }
   4% {
-    left: -1px;
-    -webkit-transform: translateX(-8%);
-    transform: translateX(-8%);
+    left: -5px;
+    -webkit-transform: translateX(-10%);
+    transform: translateX(-10%);
   }
   5% {
     left: 0;
@@ -112,26 +113,56 @@ header h1 {
 
 @keyframes tremor {
   1% {
-    left: 1px;
-    -webkit-transform: translateX(8%);
-    transform: translateX(8%);
+    left: 5px;
+    -webkit-transform: translateX(10%);
+    transform: translateX(10%);
   }
   2% {
-    left: -1px;
-    -webkit-transform: translateX(-8%);
-    transform: translateX(-8%);
+    left: -5px;
+    -webkit-transform: translateX(-10%);
+    transform: translateX(-10%);
   }
   3% {
-    left: 1px;
-    -webkit-transform: translateX(8%);
-    transform: translateX(8%);
+    left: 5px;
+    -webkit-transform: translateX(10%);
+    transform: translateX(10%);
   }
   4% {
-    left: -1px;
-    -webkit-transform: translateX(-8%);
-    transform: translateX(-8%);
+    left: -5px;
+    -webkit-transform: translateX(-10%);
+    transform: translateX(-10%);
   }
   5% {
+    left: 5px;
+    -webkit-transform: translateX(10%);
+    transform: translateX(10%);
+  }
+  6% {
+    left: -5px;
+    -webkit-transform: translateX(-10%);
+    transform: translateX(-10%);
+  }
+  7% {
+    left: 5px;
+    -webkit-transform: translateX(10%);
+    transform: translateX(10%);
+  }
+  8% {
+    left: -5px;
+    -webkit-transform: translateX(-10%);
+    transform: translateX(-10%);
+  }
+  9% {
+    left: 5px;
+    -webkit-transform: translateX(10%);
+    transform: translateX(10%);
+  }
+  10% {
+    left: -5px;
+    -webkit-transform: translateX(-10%);
+    transform: translateX(-10%);
+  }
+  11% {
     left: 0;
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -220,7 +251,8 @@ header h1 {
 }
 
 .intro-text--bigger {
-  font-size: 19px;
+  font-size: 30px;
+  font-weight: 400;
 }
 
 @media screen and (min-width: 420px) {
@@ -228,7 +260,7 @@ header h1 {
     font-size: 22px;
   }
   .intro-text--bigger {
-    font-size: 25px;
+    font-size: 40px;
   }
 }
 
@@ -237,7 +269,7 @@ header h1 {
     font-size: 27px;
   }
   .intro-text--bigger {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 
@@ -246,16 +278,13 @@ header h1 {
     font-size: 30px;
   }
   .intro-text--bigger {
-    font-size: 37px;
+    font-size: 50px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .intro-text {
     font-size: 35px;
-  }
-  .intro-text--bigger {
-    font-size: 43px;
   }
 }
 
@@ -446,7 +475,7 @@ header h1 {
 .form-section form {
   max-width: 700px;
   padding: 25px 50px;
-  background-color: #981ddb;
+  background-color: #9f97fa;
   border-radius: 10px;
 }
 
@@ -463,17 +492,6 @@ header h1 {
 
 .form-section form .btn {
   width: 100%;
-}
-
-.clients .section-title {
-  max-width: 715px;
-}
-
-.clients .section-title .count {
-  background: -webkit-gradient(linear, left top, right top, from(#d6ddec), color-stop(50%, #bdd4ef), to(#98e0f4));
-  background: linear-gradient(to right, #d6ddec 0%, #bdd4ef 50%, #98e0f4 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .feedbacks {
@@ -508,5 +526,13 @@ header h1 {
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
+}
+
+.contacts .map iframe {
+  max-height: 300px;
+}
+
+.contacts .info .name {
+  font-weight: 700;
 }
 /*# sourceMappingURL=index.css.map */
