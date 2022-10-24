@@ -286,6 +286,9 @@ header h1 {
   .intro-text {
     font-size: 35px;
   }
+  .intro-text--bigger {
+    font-size: 50px;
+  }
 }
 
 .way .section-title {
