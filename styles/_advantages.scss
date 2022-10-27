@@ -13,17 +13,38 @@
         }
     }
 
+    
+
     .items {
 
+        margin-left: -5px;
+        margin-right: -5px;
+
+        .item-wrapper {
+            padding: 0 5px;
+            margin-bottom: 30px;
+        }
+
         .item {
+            display: flex;
+            flex-direction: row;
             border: 1px solid #ececec;
             border-radius: 6px;
             max-width: 600px;
-            padding: 30px;
-            margin-bottom: 30px;
+            padding: 10px;
+            height: 100%;
 
-            p {
+            img {
+                max-width: 100%;
+            }
+
+            p.main-text--bigger {
                 font-weight: 300;
+                margin-bottom: 0;
+            }
+
+            @media screen and (min-width: 420px) {
+                padding: 30px;
             }
         }
     }

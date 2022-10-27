@@ -1,25 +1,49 @@
 .feedbacks {
     padding-bottom: 50px;
-    background-color: #9f97fa;
+    background-color: var(--menu-color);
+    position: relative;
 
     &-items {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 710px;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+
+        .slick-arrow {
+            border: none;
+            background-color: transparent;
+            font-size: 50px;
+            font-weight: 100;
+            color: var(--primary-color);
+            position: absolute;
+            bottom: -30px;
+            margin-top: -15px;
+            z-index: 10;
+
+            &--prev {
+                left: 50px;
+            }
+
+            &--next {
+                right: 50px;
+            }
+
+            @media screen and (min-width: 575px) {
+                top: 50%;
+                bottom: initial;
+                    
+                &--prev {
+                    left: -10px;
+                }
+
+                &--next {
+                    right: -10px;
+                }
+            }
+        }
 
         img {
             width: 600px;
-
-            @media screen and (min-width: 768px) {
-                &:nth-child(2n) {
-                    align-self: flex-end;
-                }
-
-                &:nth-child(2n + 1) {
-                    align-self: flex-start;
-                }
-            }
         }
     }
 }

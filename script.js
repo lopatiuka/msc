@@ -37,3 +37,37 @@ $(".counter").inViewport(function(px) { // Make use of the `px` argument!!!
     }
 });
 }); 
+
+$(".menu-item").each(function() {
+    $(this).on("click", function() {
+        $('html, body').animate({
+            scrollTop: $(this).attr("href").offset().top-100
+        }, 100); 
+    })
+})
+
+$(document).ready(function(){
+    $('.feedbacks-items').slick({
+        infinite: false,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="slick-arrow slick-arrow--prev slick-prev"><i class="fa-solid fa-chevron-left"></i></button>',
+        nextArrow: '<button type="button" class="slick-arrow slick-arrow--next slick-next"><i class="fa-solid fa-chevron-right"></i></button>',
+        responsive: [
+            {
+                breakpoint: 575,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+            }
+        ]
+    });
+});
+
+$('.navicon').on('click',function (e) {
+    e.preventDefault();
+    $(this).toggleClass('navicon--active');
+    $('.menu').toggleClass('menu--active');
+});
+    
