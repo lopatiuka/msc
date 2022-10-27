@@ -607,6 +607,9 @@ header .menu a:hover::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 1px solid #ececec;
   border-radius: 6px;
   max-width: 600px;
@@ -616,12 +619,6 @@ header .menu a:hover::after {
 
 .advantages .items .item > * {
   padding: 0 5px;
-}
-
-@media screen and (min-width: 575px) {
-  .advantages .items .item > * {
-    padding: 0 10px;
-  }
 }
 
 .advantages .items .item img {
@@ -635,7 +632,15 @@ header .menu a:hover::after {
 
 @media screen and (min-width: 420px) {
   .advantages .items .item {
-    padding: 30px;
+    padding: 15px;
+  }
+}
+
+@media screen and (min-width: 575px) {
+  .advantages .items .item {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 

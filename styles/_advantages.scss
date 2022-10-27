@@ -28,6 +28,7 @@
         .item {
             display: flex;
             flex-direction: row;
+            align-items: center;
             border: 1px solid #ececec;
             border-radius: 6px;
             max-width: 600px;
@@ -36,10 +37,6 @@
 
             & > * {
                 padding: 0 5px;
-
-                @media screen and (min-width: 575px) {
-                    padding: 0 10px;
-                }
             }
 
             img {
@@ -52,7 +49,11 @@
             }
 
             @media screen and (min-width: 420px) {
-                padding: 30px;
+                padding: 15px;
+            }
+
+            @media screen and (min-width: 575px) {
+                align-items: flex-start;
             }
         }
     }
