@@ -22,195 +22,6 @@ section {
   padding-bottom: 50px;
 }
 
-header {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-header .container-xl {
-  position: relative;
-}
-
-header h1 {
-  color: var(--main-text-color);
-  font-weight: 700;
-  font-size: 25px;
-  width: auto;
-}
-
-@media screen and (min-width: 480px) {
-  header h1 {
-    font-size: 30px;
-  }
-}
-
-header .menu-icon i {
-  color: var(--main-text-color);
-  font-size: 30px;
-}
-
-header .menu-icon i:hover {
-  cursor: pointer;
-}
-
-header .navicon {
-  width: 100%;
-  background: transparent;
-  position: relative;
-  height: 30px;
-  width: 50px;
-  display: block;
-  z-index: 99;
-  -webkit-transition: linear 0.5s all;
-  transition: linear 0.5s all;
-}
-
-header .navicon:hover {
-  cursor: pointer;
-}
-
-header .navicon:before, header .navicon:after {
-  background: #fff;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  content: "";
-  height: 3px;
-  left: 0;
-  -webkit-transition: 0.8s ease;
-  transition: 0.8s ease;
-  width: 45px;
-}
-
-header .navicon:before {
-  -webkit-box-shadow: #fff 0 14px 0 0;
-          box-shadow: #fff 0 14px 0 0;
-  position: absolute;
-  top: 0;
-}
-
-header .navicon:after {
-  position: absolute;
-  top: 28px;
-}
-
-header .navicon--active {
-  margin-top: 50px;
-  -webkit-transition: linear 0.5s all;
-  transition: linear 0.5s all;
-}
-
-header .navicon--active:before {
-  -webkit-box-shadow: transparent 0 0 0 0;
-          box-shadow: transparent 0 0 0 0;
-  top: 15px;
-  -webkit-transform: rotate(225deg);
-  transform: rotate(225deg);
-}
-
-header .navicon--active:after {
-  top: 15px;
-  -webkit-transform: rotate(315deg);
-  transform: rotate(315deg);
-}
-
-header .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding: 50px 30px 50px 15px;
-  background-color: var(--menu-color);
-  width: auto;
-  position: absolute;
-  top: 150px;
-  right: 50px;
-  border-radius: 10px;
-  opacity: 0;
-  -webkit-transition: ease-in 0.5s all;
-  transition: ease-in 0.5s all;
-  -webkit-transform: translateY(-200%);
-  transform: translateY(-200%);
-}
-
-header .menu--active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  opacity: 1;
-  -webkit-transition: ease-in 0.5s all;
-  transition: ease-in 0.5s all;
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-}
-
-header .menu .title {
-  font-size: 35px;
-  margin-bottom: 30px;
-  color: var(--main-text-color);
-}
-
-header .menu a {
-  text-decoration: none;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  margin-bottom: 15px;
-  font-size: 30px;
-  -webkit-transition: linear 0.5s all;
-  transition: linear 0.5s all;
-  color: var(--main-text-color);
-}
-
-header .menu a::after {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  content: "";
-  height: 2px;
-  width: 0;
-  -webkit-transition: width 0.5s ease-in-out;
-  transition: width 0.5s ease-in-out;
-  background-color: var(--primary-color);
-}
-
-header .menu a:hover {
-  cursor: pointer;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  color: var(--primary-color);
-  -webkit-transition: linear 0.5s all;
-  transition: linear 0.5s all;
-  -webkit-transform: scale(1.15);
-  transform: scale(1.15);
-  font-weight: 700;
-}
-
-header .menu a:hover::after {
-  width: 100%;
-}
-
-@media screen and (min-width: 420px) {
-  header .menu a {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .container-xl {
     max-width: 1230px;
@@ -372,6 +183,197 @@ header .menu a:hover::after {
 
 .main-text--secondary {
   color: var(--secondary-text-color);
+}
+
+header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+header .container-xl {
+  position: relative;
+}
+
+header h1 {
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 25px;
+  width: auto;
+}
+
+@media screen and (min-width: 480px) {
+  header h1 {
+    font-size: 30px;
+  }
+}
+
+header .menu-icon i {
+  color: var(--main-text-color);
+  font-size: 30px;
+}
+
+header .menu-icon i:hover {
+  cursor: pointer;
+}
+
+header .navicon {
+  background: transparent;
+  position: relative;
+  height: 30px;
+  width: 45px;
+  display: block;
+  z-index: 99;
+  -webkit-transition: linear 0.5s all;
+  transition: linear 0.5s all;
+  padding: 0 15px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+header .navicon:hover {
+  cursor: pointer;
+}
+
+header .navicon:before, header .navicon:after {
+  background: #fff;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  content: "";
+  height: 3px;
+  left: 0;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  width: 45px;
+}
+
+header .navicon:before {
+  -webkit-box-shadow: #fff 0 14px 0 0;
+          box-shadow: #fff 0 14px 0 0;
+  position: absolute;
+  top: 0;
+}
+
+header .navicon:after {
+  position: absolute;
+  top: 28px;
+}
+
+header .navicon--active {
+  margin-top: 50px;
+  -webkit-transition: linear 0.5s all;
+  transition: linear 0.5s all;
+}
+
+header .navicon--active:before {
+  -webkit-box-shadow: transparent 0 0 0 0;
+          box-shadow: transparent 0 0 0 0;
+  top: 15px;
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+
+header .navicon--active:after {
+  top: 15px;
+  -webkit-transform: rotate(315deg);
+  transform: rotate(315deg);
+}
+
+header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 30px;
+  background-color: var(--menu-color);
+  width: auto;
+  position: absolute;
+  top: 150px;
+  right: 50px;
+  border-radius: 10px;
+  opacity: 0;
+  -webkit-transition: ease-in 0.5s all;
+  transition: ease-in 0.5s all;
+  -webkit-transform: translateY(-200%);
+  transform: translateY(-200%);
+}
+
+header .menu--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+  -webkit-transition: ease-in 0.5s all;
+  transition: ease-in 0.5s all;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+header .menu .title {
+  font-size: 35px;
+  margin-bottom: 30px;
+  color: var(--main-text-color);
+}
+
+header .menu a {
+  text-decoration: none;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 15px;
+  font-size: 30px;
+  -webkit-transition: linear 0.5s all;
+  transition: linear 0.5s all;
+  color: var(--main-text-color);
+}
+
+header .menu a::after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  content: "";
+  height: 2px;
+  width: 0;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+  background-color: var(--primary-color);
+}
+
+header .menu a:hover {
+  cursor: pointer;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: var(--primary-color);
+  -webkit-transition: linear 0.5s all;
+  transition: linear 0.5s all;
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+  font-weight: 700;
+}
+
+header .menu a:hover::after {
+  width: 100%;
+}
+
+@media screen and (min-width: 420px) {
+  header .menu a {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
 }
 
 .intro {
@@ -610,6 +612,16 @@ header .menu a:hover::after {
   max-width: 600px;
   padding: 10px;
   height: 100%;
+}
+
+.advantages .items .item > * {
+  padding: 0 5px;
+}
+
+@media screen and (min-width: 575px) {
+  .advantages .items .item > * {
+    padding: 0 10px;
+  }
 }
 
 .advantages .items .item img {

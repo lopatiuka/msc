@@ -1,0 +1,170 @@
+header {
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .container-xl {
+        position: relative;
+    }
+
+    h1 {
+        color: var(--main-text-color);
+        font-weight: 700;
+        font-size: 25px;
+        width: auto;
+
+        @media screen and (min-width: 480px) {
+            font-size: 30px;
+        }
+    }
+
+    .menu-icon {
+
+        i {
+            color: var(--main-text-color);
+            font-size: 30px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .navicon {
+        background: transparent;
+        position: relative;
+        height: 30px;
+        width: 45px;
+        display: block;
+        z-index: 99;
+        -webkit-transition: linear 0.5s all;
+        transition: linear 0.5s all;
+        padding: 0 15px;
+        box-sizing: content-box;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:before, &:after {
+            background: #fff;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            content: "";
+            height: 3px;
+            left: 0;
+            -webkit-transition: 0.8s ease;
+            transition: 0.8s ease;
+            width: 45px;
+        }
+
+        &:before {
+            box-shadow: #fff 0 14px 0 0;
+            position: absolute;
+            top: 0;
+        }
+
+        &:after {
+            position: absolute;
+            top: 28px;
+        }
+
+        &--active {
+            margin-top: 50px;
+            -webkit-transition: linear 0.5s all;
+            transition: linear 0.5s all;
+
+            &:before {
+                box-shadow: transparent 0 0 0 0;
+                top: 15px;
+                -webkit-transform: rotate(225deg);
+                -ms-transform: rotate(225deg);
+                transform: rotate(225deg);
+            }
+
+            &:after {
+                top: 15px;
+                -webkit-transform: rotate(315deg);
+                -ms-transform: rotate(315deg);
+                transform: rotate(315deg);
+            }
+        }
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 30px;
+        background-color: var(--menu-color);
+        width: auto;
+        position: absolute;
+        top: 150px; right: 50px;
+        border-radius: 10px;
+        opacity:0;
+        -webkit-transition: ease-in 0.5s all;
+        transition: ease-in 0.5s all;
+        -webkit-transform: translateY(-200%);
+        -ms-transform: translateY(-200%);
+        transform: translateY(-200%);
+
+        &--active {
+            display: flex;
+            opacity: 1;
+            -webkit-transition: ease-in 0.5s all;
+            transition: ease-in 0.5s all;
+            -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+            transform: translateY(0);
+        }
+
+        .title {
+            font-size: 35px;
+            margin-bottom: 30px;
+            color: var(--main-text-color);
+        }
+
+        a {
+            text-decoration: none;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-bottom: 15px;
+            font-size: 30px;
+            -webkit-transition: linear 0.5s all;
+            transition: linear 0.5s all;
+            color: var(--main-text-color);
+
+            &::after {
+                display: flex;
+                content: "";
+                height: 2px;
+                width: 0;
+                transition: width 0.5s ease-in-out;
+                background-color: var(--primary-color);
+            }
+
+            &:hover {
+                cursor: pointer;
+                align-items: flex-start;
+                color: var(--primary-color);
+                -webkit-transition: linear 0.5s all;
+                transition: linear 0.5s all;
+                -webkit-transform: scale(1.15);
+                -ms-transform: scale(1.15);
+                transform: scale(1.15);
+                font-weight: 700;
+
+                &::after {
+                    width: 100%;
+                }
+            }
+
+            @media screen and (min-width: 420px) {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
