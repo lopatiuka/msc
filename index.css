@@ -650,7 +650,7 @@ header .menu a:hover::after {
   border: 1px solid #ececec;
   border-radius: 6px;
   max-width: 600px;
-  padding: 10px 5px;
+  padding: 10px 0;
   height: 100%;
 }
 
@@ -659,11 +659,12 @@ header .menu a:hover::after {
 }
 
 .advantages .items .item .icon {
-  max-width: 60px;
+  max-width: 55px;
+  min-width: 55px;
 }
 
 .advantages .items .item img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .advantages .items .item p.main-text--bigger {
