@@ -305,6 +305,7 @@ header .menu {
   transform: translateY(-190%);
   -webkit-box-shadow: 0px 0px 33px -3px rgba(66, 68, 90, 0.83);
   box-shadow: 0px 0px 33px -3px rgba(66, 68, 90, 0.83);
+  z-index: 15;
 }
 
 @media screen and (min-width: 420px) {
@@ -398,11 +399,11 @@ header .menu a:hover::after {
   background-color: var(--primary-color);
 }
 
-.intro .image {
+.intro .image-wrapper {
   position: relative;
 }
 
-.intro .image::after {
+.intro .image-wrapper::after {
   display: block;
   content: "";
   position: absolute;
@@ -668,12 +669,6 @@ header .menu a:hover::after {
 .advantages .items .item p.main-text--bigger {
   font-weight: 300;
   margin-bottom: 0;
-}
-
-@media screen and (min-width: 420px) {
-  .advantages .items .item {
-    padding: 15px;
-  }
 }
 
 .services-list {
