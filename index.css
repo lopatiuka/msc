@@ -7,6 +7,7 @@
   --secondary-text-color: var(--primary-color);
   --menu-color: #010121;
   --form-color: #008bff;
+  --feedbacks-bg-color: #008bff;
 }
 
 body {
@@ -648,12 +649,16 @@ header .menu a:hover::after {
   border: 1px solid #ececec;
   border-radius: 6px;
   max-width: 600px;
-  padding: 10px;
+  padding: 10px 5px;
   height: 100%;
 }
 
 .advantages .items .item > * {
   padding: 0 5px;
+}
+
+.advantages .items .item .icon {
+  max-width: 50px;
 }
 
 .advantages .items .item img {
@@ -710,7 +715,7 @@ header .menu a:hover::after {
 
 .feedbacks {
   padding-bottom: 50px;
-  background-color: var(--menu-color);
+  background-color: var(--feedbacks-bg-color);
   position: relative;
 }
 
