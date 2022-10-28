@@ -1,8 +1,5 @@
 header {
 
-    padding-top: 30px;
-    padding-bottom: 30px;
-
     .container-xl {
         position: relative;
     }
@@ -70,7 +67,7 @@ header {
         }
 
         &--active {
-            margin-top: 50px;
+            margin-top: 25px;
             -webkit-transition: linear 0.5s all;
             transition: linear 0.5s all;
 
@@ -88,25 +85,40 @@ header {
                 -ms-transform: rotate(315deg);
                 transform: rotate(315deg);
             }
+
+            @media screen and (min-width: 420px) {
+                margin-top: 50px;
+            }
         }
     }
 
     .menu {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        padding: 50px 30px;
+        align-items: flex-start;
+        padding: 15px 10px;
         background-color: var(--menu-color);
-        width: auto;
+        width: 100%;
         position: absolute;
-        top: 150px; right: 50px;
-        border-radius: 10px;
+        top: 100px; right: 0;
         opacity:0;
         -webkit-transition: ease-in 0.5s all;
         transition: ease-in 0.5s all;
-        -webkit-transform: translateY(-200%);
-        -ms-transform: translateY(-200%);
-        transform: translateY(-200%);
+        -webkit-transform: translateY(-190%);
+        -ms-transform: translateY(-190%);
+        transform: translateY(-190%);
+        -webkit-box-shadow: 0px 0px 33px -3px rgba(66, 68, 90, 0.83);
+        -moz-box-shadow: 0px 0px 33px -3px rgba(66, 68, 90, 0.83);
+        box-shadow: 0px 0px 33px -3px rgba(66, 68, 90, 0.83);
+
+        @media screen and (min-width: 420px) {
+            width: auto;
+            align-items: center;
+            right: 50px;
+            top: 150px;
+            border-radius: 10px;
+            padding: 50px 30px;
+        }
 
         &--active {
             display: flex;
@@ -116,6 +128,7 @@ header {
             -webkit-transform: translateY(0);
             -ms-transform: translateY(0);
             transform: translateY(0);
+            z-index: 15;
         }
 
         .title {
@@ -131,7 +144,7 @@ header {
             flex-direction: column;
             align-items: flex-end;
             margin-bottom: 15px;
-            font-size: 30px;
+            font-size: 17px;
             -webkit-transition: linear 0.5s all;
             transition: linear 0.5s all;
             color: var(--main-text-color);
@@ -142,13 +155,13 @@ header {
                 height: 2px;
                 width: 0;
                 transition: width 0.5s ease-in-out;
-                background-color: var(--primary-color);
+                background-color: var(--form-color);
             }
 
             &:hover {
                 cursor: pointer;
                 align-items: flex-start;
-                color: var(--primary-color);
+                color: var(--form-color);
                 -webkit-transition: linear 0.5s all;
                 transition: linear 0.5s all;
                 -webkit-transform: scale(1.15);
