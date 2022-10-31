@@ -1,8 +1,21 @@
 .intro {
     background-color: var(--primary-color);
+    padding-top: 0;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 50px;
+    }
 
     .image-wrapper {
         position: relative;
+
+        img {
+            margin-top: -30px;
+
+            @media screen and (min-width: 992px) {
+                margin-top: 0;
+            }
+        }
 
         &::after {
             display: block;
@@ -25,15 +38,23 @@
         text-align: center;
 
         &--bigger {
-            font-size: 30px;
+            font-size: 23px;
             font-weight: 400;
+            margin-bottom: 15px;
+        }
+
+        @media screen and (min-width: 372px) {
+            &--bigger {
+                font-size: 27px;
+            }
         }
 
         @media screen and (min-width: 420px) {
             font-size: 22px;
 
             &--bigger {
-                font-size: 40px;
+                font-size: 30px;
+                margin-bottom: 30px;
             }
         }
 
@@ -41,7 +62,7 @@
             font-size: 27px;
 
             &--bigger {
-                font-size: 40px;
+                font-size: 39px;
             }
         }
 
@@ -49,7 +70,8 @@
             font-size: 30px;
 
             &--bigger {
-                font-size: 45px;
+                font-size: 36px;
+                margin-bottom: 40px;
             }
         }
 
@@ -57,7 +79,7 @@
             font-size: 35px;
 
             &--bigger {
-                font-size: 45px;
+                font-size: 44px;
             }
         }
     }

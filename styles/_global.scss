@@ -25,215 +25,131 @@ section {
     position: fixed;
     bottom: 15px;
     left: 15px;
-    background-color: rgb(125, 72, 224);
+    background-color: var(--call-btn-color);
     width: 55px;
     height: 55px;
     border-radius: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0 0 0 rgba(#3Fafaf, .5);
     z-index: 15;
+    -webkit-animation: pulse 1.5s infinite;
 
     &:hover {
         cursor: pointer;
+        -webkit-animation: none;
+
+        i {
+            -webkit-animation: none;
+        }
     }
 
-    img {
-        width: 70%;
-        animation: tremor 3s infinite;
+    i {
+        font-size: 25px;
+        color: #FFFFFF;
+        -webkit-animation: tremor 3s infinite;
     }
 
     @media screen and (min-width: 480px) {
         width: 70px;
         height: 70px;
+
+        i {
+            font-size: 35px;
+        }
+    }
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(.9);
+    }
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 30px rgba(#3Fafaf, 0);
+    }
+      100% {
+      transform: scale(.9);
+      box-shadow: 0 0 0 0 rgba(#3Fafaf, 0);
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+      transform: scale(.9);
+    }
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 30px rgba(#3Fafaf, 0);
+    }
+    100% {
+      transform: scale(.9);
+      box-shadow: 0 0 0 0 rgba(#3Fafaf, 0);
     }
 }
 
 @-webkit-keyframes tremor {
-    1% {
+    0% {
         left: 5px;
-        -webkit-transform: translateX(10%);
-        transform: translateX(10%);
-    }
-   
-    2% {
-        left: -5px;
-        -webkit-transform: translateX(-10%);
-        transform: translateX(-10%);
-    }
-    3% {
-        left: 5px;
-        -webkit-transform: translateX(10%);
-        transform: translateX(10%);
-    }
-   
-    4% {
-        left: -5px;
-        -webkit-transform: translateX(-10%);
-        transform: translateX(-10%);
-    }
-
-    5% {
-        left: 0;
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-}
-@-moz-keyframes tremor {
-    1% {
-        left: 5px;
-        -webkit-transform: translateX(10%);
-        transform: translateX(10%);
-    }
-   
-    2% {
-        left: -5px;
-        -webkit-transform: translateX(-10%);
-        transform: translateX(-10%);
-    }
-    3% {
-        left: 5px;
-        -webkit-transform: translateX(10%);
-        transform: translateX(10%);
-    }
-   
-    4% {
-        left: -5px;
-        -webkit-transform: translateX(-10%);
-        transform: translateX(-10%);
-    }
-
-    5% {
-        left: 0;
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-}
-@-ms-keyframes tremor {
-    1% {
-        left: 5px;
-        -webkit-transform: translateX(10%);
-        transform: translateX(10%);
-    }
-   
-    2% {
-        left: -5px;
-        -webkit-transform: translateX(-10%);
-        transform: translateX(-10%);
-    }
-    3% {
-        left: 5px;
-        -webkit-transform: translateX(10%);
-        transform: translateX(10%);
-    }
-   
-    4% {
-        left: -5px;
-        -webkit-transform: translateX(-10%);
-        transform: translateX(-10%);
-    }
-
-    5% {
-        left: 0;
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-}
-@-o-keyframes tremor {
-    1% {
-        left: 5px;
-        -webkit-transform: translateX(10%);
-        transform: translateX(10%);
-    }
-   
-    2% {
-        left: -5px;
-        -webkit-transform: translateX(-10%);
-        transform: translateX(-10%);
-    }
-    3% {
-        left: 5px;
-        -webkit-transform: translateX(10%);
-        transform: translateX(10%);
-    }
-   
-    4% {
-        left: -5px;
-        -webkit-transform: translateX(-10%);
-        transform: translateX(-10%);
-    }
-
-    5% {
-        left: 0;
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-}
-@keyframes tremor {
-    1% {
-        left: 5px;
-        -webkit-transform: translateX(10%);
-        transform: translateX(10%);
-    }
-   
-    2% {
-        left: -5px;
-        -webkit-transform: translateX(-10%);
-        transform: translateX(-10%);
-    }
-
-    3% {
-        left: 5px;
-        -webkit-transform: translateX(10%);
-        transform: translateX(10%);
-    }
-   
-    4% {
-        left: -5px;
-        -webkit-transform: translateX(-10%);
-        transform: translateX(-10%);
-    }
-
-    5% {
-        left: 5px;
-        -webkit-transform: translateX(10%);
-        transform: translateX(10%);
-    }
-   
-    6% {
-        left: -5px;
-        -webkit-transform: translateX(-10%);
-        transform: translateX(-10%);
-    }
-
-    7% {
-        left: 5px;
-        -webkit-transform: translateX(10%);
-        transform: translateX(10%);
-    }
-   
-    8% {
-        left: -5px;
-        -webkit-transform: translateX(-10%);
-        transform: translateX(-10%);
-    }
-
-    9% {
-        left: 5px;
-        -webkit-transform: translateX(10%);
-        transform: translateX(10%);
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
     }
    
     10% {
         left: -5px;
-        -webkit-transform: translateX(-10%);
-        transform: translateX(-10%);
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
     }
 
-    11% {
-        left: 0;
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
+    20% {
+        left: 5px;
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+   
+    30% {
+        left: -5px;
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+
+    40% {
+        left: 5px;
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+}
+
+@keyframes tremor {
+    0% {
+        left: 5px;
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+   
+    10% {
+        left: -5px;
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+
+    20% {
+        left: 5px;
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+   
+    30% {
+        left: -5px;
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+
+    40% {
+        left: 5px;
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
     }
 }
 
