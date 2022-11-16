@@ -1,10 +1,16 @@
 .form-section {
 
     form {
+        $inputMarginBottom: 15px;
         max-width: 700px;
-        padding: 25px 50px;
+        padding: 25px 15px;
         background-color: var(--form-color);
         border-radius: 10px;
+
+        .iti--allow-dropdown {
+            width: 100%;
+            margin-bottom: $inputMarginBottom;
+        }
 
         .form-title {
             color: var(--main-text-color);
@@ -14,11 +20,15 @@
         }
 
         .form-control {
-            margin-bottom: 15px;
+            margin-bottom: $inputMarginBottom;
         }
 
         .btn {
             width: 100%;
+        }
+
+        @media screen and (min-width: 575px) {
+            padding: 25px 50px;
         }
     }
 }

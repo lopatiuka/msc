@@ -1,49 +1,128 @@
 .feedbacks {
-    padding-bottom: 50px;
-    background-color: var(--feedbacks-bg-color);
+    padding-bottom: 100px;
     position: relative;
 
     &-items {
-        display: flex;
+        display: flex !important;
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
         flex-wrap: nowrap;
 
-        .slick-arrow {
-            border: none;
-            background-color: transparent;
-            font-size: 50px;
-            font-weight: 100;
-            color: var(--primary-color);
-            position: absolute;
-            bottom: -30px;
-            margin-top: -15px;
-            z-index: 10;
+        @media screen and (min-width: 575px) {
+            padding: 0 30px;
+        }
 
-            &--prev {
-                left: 50px;
-            }
-
-            &--next {
-                right: 50px;
-            }
+        .feedback-item {
+            display: flex !important;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 3px;
 
             @media screen and (min-width: 575px) {
-                top: 50%;
-                bottom: initial;
-                    
-                &--prev {
-                    left: -10px;
+                padding: 0 15px;
+            }
+
+            &-photo {
+                $photoSize: 150px;
+                width: $photoSize;
+                height: $photoSize;
+                min-height: $photoSize;
+                border-radius: $photoSize;
+                background-position: 100% 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin-bottom: -35px;
+                z-index: 2;
+
+                &-1 {
+                    background-image: url("../images/feedbacks-section/feedback-photo-1.jpg");
                 }
 
-                &--next {
-                    right: -10px;
+                &-2 {
+                    background-image: url("../images/feedbacks-section/feedback-photo-2.jpg");
+                }
+
+                &-3 {
+                    background-image: url("../images/feedbacks-section/feedback-photo-3.jpg");
+                    background-position: 100% 35%;
+                }
+
+                &-4 {
+                    background-image: url("../images/feedbacks-section/feedback-photo-4.jpg");
+                }
+
+                &-5 {
+                    background-image: url("../images/feedbacks-section/feedback-photo-5.jpg");
+                    background-position: 100% 0%;
+                }
+
+                &-6 {
+                    background-image: url("../images/feedbacks-section/feedback-photo-6.jpg");
+                    background-position: 100% 35%;
+                }
+
+                &-7 {
+                    background-image: url("../images/feedbacks-section/feedback-photo-7.jpg");
+                    background-position: 100% 38%;
+                }
+            }
+
+            &-text {
+                padding: 40px 15px 10px;
+                text-align: center;
+                border-radius: 30px;
+                background-color: white;
+                height: 100%;
+
+                &-fullname {
+                    font-size: 25px;
+                    margin-bottom: 15px;
+                }
+
+                &-content {
+                    font-size: 17px;
                 }
             }
         }
 
-        img {
-            width: 600px;
+        .slick {
+
+            &-list, &-track {
+                display: flex;
+            }
+
+            &-arrow {
+                border: none;
+                background-color: transparent;
+                font-size: 50px;
+                font-weight: 100;
+                color: var(--feedbacks-bg-color);
+                position: absolute;
+                bottom: -85px;
+                margin-top: -15px;
+                z-index: 10;
+
+                &--prev {
+                    left: 50px;
+                }
+
+                &--next {
+                    right: 50px;
+                }
+
+                @media screen and (min-width: 575px) {
+                    top: 50%;
+                    bottom: initial;
+                        
+                    &--prev {
+                        left: -10px;
+                    }
+
+                    &--next {
+                        right: -10px;
+                    }
+                }
+            }
         }
     }
 }

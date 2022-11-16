@@ -70,4 +70,32 @@ $('.navicon').on('click',function (e) {
     $(this).toggleClass('navicon--active');
     $('.menu').toggleClass('menu--active');
 });
+
+var countryCode;
+
+function initInput (code) {
+    $("#telephone").intlTelInput({
+        initialCountry: code,
+        nationalMode: false,
+        autoHideDialCode: false,
+        separateDialCode: true,
+    });
+}
+
+fetch('https://api.ipregistry.co/?key=tryout')
+.then(function (response) {
+    return response.json();
+})
+.then(function (payload) {
+    countryCode = payload.location.country.code.toString();
+    initInput(countryCode);
+
+})
+.catch(function (error) {
+    initInput("UA");
+})
+
+
+
+    
     
