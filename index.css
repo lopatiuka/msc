@@ -836,34 +836,34 @@ header .menu a:hover::after {
 }
 
 .feedbacks-items .feedback-item-photo-1 {
-  background-image: url("../images/feedbacks-section/feedback-photo-1.jpg");
+  background-image: url("../images/feedbacks-section/photo-1.jpg");
 }
 
 .feedbacks-items .feedback-item-photo-2 {
-  background-image: url("../images/feedbacks-section/feedback-photo-2.jpg");
+  background-image: url("../images/feedbacks-section/photo-2.jpg");
 }
 
 .feedbacks-items .feedback-item-photo-3 {
-  background-image: url("../images/feedbacks-section/feedback-photo-3.jpg");
+  background-image: url("../images/feedbacks-section/photo-3.jpg");
   background-position: 100% 35%;
 }
 
 .feedbacks-items .feedback-item-photo-4 {
-  background-image: url("../images/feedbacks-section/feedback-photo-4.jpg");
+  background-image: url("../images/feedbacks-section/photo-4.jpg");
 }
 
 .feedbacks-items .feedback-item-photo-5 {
-  background-image: url("../images/feedbacks-section/feedback-photo-5.jpg");
+  background-image: url("../images/feedbacks-section/photo-5.jpg");
   background-position: 100% 0%;
 }
 
 .feedbacks-items .feedback-item-photo-6 {
-  background-image: url("../images/feedbacks-section/feedback-photo-6.jpg");
+  background-image: url("../images/feedbacks-section/photo-6.jpg");
   background-position: 100% 35%;
 }
 
 .feedbacks-items .feedback-item-photo-7 {
-  background-image: url("../images/feedbacks-section/feedback-photo-7.jpg");
+  background-image: url("../images/feedbacks-section/photo-7.jpg");
   background-position: 100% 38%;
 }
 
