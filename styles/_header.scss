@@ -44,7 +44,7 @@ header {
         }
 
         &:before, &:after {
-            background: #fff;
+            background: var(--main-text-color);
             -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
             content: "";
@@ -56,7 +56,7 @@ header {
         }
 
         &:before {
-            box-shadow: #fff 0 14px 0 0;
+            box-shadow: var(--main-text-color) 0 14px 0 0;
             position: absolute;
             top: 0;
         }
@@ -67,7 +67,7 @@ header {
         }
 
         &--active {
-            margin-top: 25px;
+            margin-top: -50px;
             -webkit-transition: linear 0.5s all;
             transition: linear 0.5s all;
 
@@ -86,8 +86,8 @@ header {
                 transform: rotate(315deg);
             }
 
-            @media screen and (min-width: 420px) {
-                margin-top: 50px;
+            @media screen and (min-width: 992px) {
+                margin-top: 0;
             }
         }
     }
@@ -132,7 +132,7 @@ header {
         .title {
             font-size: 35px;
             margin-bottom: 30px;
-            color: var(--main-text-color);
+            color: var(--menu-text-color);
         }
 
         a {
@@ -145,7 +145,7 @@ header {
             font-size: 17px;
             -webkit-transition: linear 0.5s all;
             transition: linear 0.5s all;
-            color: var(--main-text-color);
+            color: var(--menu-text-color);
 
             &::after {
                 display: flex;

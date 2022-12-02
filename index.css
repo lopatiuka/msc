@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto:wght@100;300;400;500;700;800&display=swap");
 :root {
-  --primary-color: #000030;
+  --primary-color: #FFFFFF;
   --secondary-color: #FFFFFF;
-  --main-text-color: var(--secondary-color);
-  --secondary-text-color: var(--primary-color);
+  --main-text-color: #000030;
+  --secondary-text-color: #000030;
   --menu-color: #010121;
+  --menu-text-color: #FFFFFF;
   --form-color: #0065b7;
   --feedbacks-bg-color: #008bff;
   --call-btn-color: #3a68e7;
@@ -252,7 +253,7 @@ header .navicon:hover {
 }
 
 header .navicon:before, header .navicon:after {
-  background: #fff;
+  background: var(--main-text-color);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   content: "";
@@ -264,8 +265,8 @@ header .navicon:before, header .navicon:after {
 }
 
 header .navicon:before {
-  -webkit-box-shadow: #fff 0 14px 0 0;
-          box-shadow: #fff 0 14px 0 0;
+  -webkit-box-shadow: var(--main-text-color) 0 14px 0 0;
+          box-shadow: var(--main-text-color) 0 14px 0 0;
   position: absolute;
   top: 0;
 }
@@ -276,7 +277,7 @@ header .navicon:after {
 }
 
 header .navicon--active {
-  margin-top: 25px;
+  margin-top: -50px;
   -webkit-transition: linear 0.5s all;
   transition: linear 0.5s all;
 }
@@ -295,9 +296,9 @@ header .navicon--active:after {
   transform: rotate(315deg);
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 992px) {
   header .navicon--active {
-    margin-top: 50px;
+    margin-top: 0;
   }
 }
 
@@ -354,7 +355,7 @@ header .menu--active {
 header .menu .title {
   font-size: 35px;
   margin-bottom: 30px;
-  color: var(--main-text-color);
+  color: var(--menu-text-color);
 }
 
 header .menu a {
@@ -374,7 +375,7 @@ header .menu a {
   font-size: 17px;
   -webkit-transition: linear 0.5s all;
   transition: linear 0.5s all;
-  color: var(--main-text-color);
+  color: var(--menu-text-color);
 }
 
 header .menu a::after {
@@ -446,8 +447,8 @@ header .menu a:hover::after {
   left: 0;
   right: 0;
   height: 150px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#000030), color-stop(75%, rgba(0, 0, 48, 0)));
-  background: linear-gradient(0deg, #000030 0%, rgba(0, 0, 48, 0) 75%);
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--primary-color)), color-stop(75%, rgba(0, 0, 48, 0)));
+  background: linear-gradient(0deg, var(--primary-color) 0%, rgba(0, 0, 48, 0) 75%);
 }
 
 .intro .text {
@@ -459,6 +460,16 @@ header .menu a:hover::after {
   font-weight: 100;
   font-size: 19px;
   text-align: center;
+}
+
+.intro-text .inline-logo {
+  max-width: 70px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-text .inline-logo {
+    max-width: 100px;
+  }
 }
 
 .intro-text--bigger {
