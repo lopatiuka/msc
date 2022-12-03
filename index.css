@@ -768,7 +768,7 @@ header .menu a:hover::after {
 }
 
 .form-section form .form-title {
-  color: var(--main-text-color);
+  color: var(--primary-color);
   font-size: 25px;
   font-weight: 100;
   text-align: center;
