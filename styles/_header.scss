@@ -4,6 +4,14 @@ header {
         position: relative;
     }
 
+    .logo {
+        max-width: 50%;
+        
+        @media screen and (min-width: 420px) {
+            max-width: 100%;   
+        }
+    }
+
     h1 {
         color: var(--main-text-color);
         font-weight: 700;
